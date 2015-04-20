@@ -1,0 +1,9 @@
+<drawable-list id="ne_n" x="52" y="54" foreground="Gfx.COLOR_RED">
+    <shape type="rectangle" height="20" width="40" />
+    <shape type="rectangle" x="75" height="20" width="40" />
+    <shape type="rectangle" y="90" height="20" width="40" />
+    <shape type="rectangle" x="75" y="90" height="20" width="40" />
+    <shape type="rectangle" x="11" height="100" width="20" />
+    <shape type="rectangle" x="85" height="100" width="20" />
+    <shape type="polygon" points="[[40,0], [95,105], [75,110], [20,5]]" />
+</drawable-list>

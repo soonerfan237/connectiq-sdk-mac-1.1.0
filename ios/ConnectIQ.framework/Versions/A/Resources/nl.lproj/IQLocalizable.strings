@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ConnectIQ
+
+  Copyright (c) 2015 Garmin. All rights reserved.
+*/
+
+/* Message. Garmin Connect Mobile needs to be installed. Max chars: NA */
+"gcm_not_installed" = "Garmin Connect Mobile is vereist, maar momenteel niet geïnstalleerd.";
+
+/* Button title displayed to close the page. Max chars: 10 */
+"close" = "Sluiten";
+
+/* Button which allows the user to open the app store. Do not translate App Store. Max chars: 15 */
+"app_store" = "App Store";

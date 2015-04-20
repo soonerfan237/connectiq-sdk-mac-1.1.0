@@ -1,0 +1,6 @@
+<resources>
+    <bitmaps>
+        <bitmap id="id_monkey" filename="images/monkey.png" />
+        <string id="hi">hello</string>
+    </bitmaps>
+</resources>

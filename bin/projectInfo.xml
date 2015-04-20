@@ -1,0 +1,100 @@
+<monkeybrains>
+
+    <appPermissions>
+        <permission id="Ant" name="ANT" description="Permission to use ANT" module="Ant" />
+        <permission id="Communications" name="Communications" description="Permission to use Bluetooth LE" module="Communications" />
+        <permission id="Fit" name="Activity Recording" description="Permission to record fit files" module="ActivityRecording" />
+        <permission id="PersistedLocations" name="Persisted Locations" description="Permission to save persisted locations" module="PersistedLocations" />
+        <permission id="Positioning" name="Positioning" description="Permission to use GPS" module="Position" />
+        <permission id="Sensor" name="Sensor" description="Permission to access sensor data" module="Sensor" />
+        <permission id="Steps" name="Steps" description="Permission to access the user's step data" module="ActivityMonitor" />
+        <permission id="UserProfile" name="User Profile" description="Permission to access the user's profile" module="UserProfile" />
+    </appPermissions>
+
+    <appTypes>
+        <appType id="watchface" value="0" name="Watch Face" description="A simple watch face" />
+        <appType id="datafield" value="2" name="Data Field" description="A data field" />
+        <appType id="widget" value="3" name="Widget" description="A widget" />
+        <appType id="watch-app" value="1" name="Watch App" description="Application" />
+    </appTypes>
+
+    <permissionMaps>
+        <permissionMap appType="watchface">
+            <permissions>
+                <permission id="Sensor" />
+                <permission id="Steps" />
+                <permission id="UserProfile" />
+            </permissions>
+        </permissionMap>
+        <permissionMap appType="datafield">
+            <permissions>
+                <permission id="Steps" />
+                <permission id="UserProfile" />
+            </permissions>
+        </permissionMap>
+        <permissionMap appType="widget">
+            <permissions>
+                <permission id="Communications" />
+                <permission id="Positioning" />
+                <permission id="Sensor" />
+                <permission id="Steps" />
+                <permission id="UserProfile" />
+            </permissions>
+        </permissionMap>
+        <permissionMap appType="watch-app">
+            <permissions>
+                <permission id="Ant" />
+                <permission id="Communications" />
+                <permission id="Fit" />
+                <permission id="PersistedLocations" />
+                <permission id="Positioning" />
+                <permission id="Sensor" />
+                <permission id="Steps" />
+                <permission id="UserProfile" />
+            </permissions>
+        </permissionMap>
+    </permissionMaps>
+
+    <newProjectFilesMaps>
+        <newProjectFileMap appType="watchface" name="Simple" baseDir="templates/watchface/simple"
+            description="A simple watch face that displays the time in a digital format centered in the middle of the screen.">
+            <file type="source">source/App.mc</file>
+            <file type="source">source/View.mc</file>
+            <file type="manifest">manifest.xml</file>
+            <file type="resource">resources/resources.xml</file>
+            <file type="resource">resources/images/launcher_icon.png</file>
+            <file type="resource">resources/layouts/layout.xml</file>
+        </newProjectFileMap>
+        <newProjectFileMap appType="datafield" name="Simple" baseDir="templates/datafield/simple"
+            description="A data field that extends The SimpleDataField class.">
+            <file type="source">source/App.mc</file>
+            <file type="source">source/View.mc</file>
+            <file type="manifest">manifest.xml</file>
+            <file type="resource">resources/resources.xml</file>
+            <file type="resource">resources/images/launcher_icon.png</file>
+        </newProjectFileMap>
+        <newProjectFileMap appType="widget" name="Simple" baseDir="templates/widget/simple"
+            description="A simple widget that draws a monkey in the middle of the screen.">
+            <file type="source">source/App.mc</file>
+            <file type="source">source/View.mc</file>
+            <file type="manifest">manifest.xml</file>
+            <file type="resource">resources/resources.xml</file>
+            <file type="resource">resources/images/launcher_icon.png</file>
+            <file type="resource">resources/images/monkey.png</file>
+            <file type="resource">resources/layouts/layout.xml</file>
+        </newProjectFileMap>
+        <newProjectFileMap appType="watch-app" name="Simple" baseDir="templates/watch-app/simple"
+            description="A simple watch app that draws a monkey and implements a menu.">
+            <file type="source">source/App.mc</file>
+            <file type="source">source/View.mc</file>
+            <file type="source">source/MenuDelegate.mc</file>
+            <file type="manifest">manifest.xml</file>
+            <file type="resource">resources/resources.xml</file>
+            <file type="resource">resources/menus/menu.xml</file>
+            <file type="resource">resources/images/launcher_icon.png</file>
+            <file type="resource">resources/images/monkey.png</file>
+            <file type="resource">resources/layouts/layout.xml</file>
+        </newProjectFileMap>
+    </newProjectFilesMaps>
+
+</monkeybrains>

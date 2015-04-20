@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Toybox::System::DeviceSettings
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../';
+  framesUrl = "../../frames.html#!Toybox/System/DeviceSettings.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (D)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Toybox.html" title="Toybox (module)">Toybox</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../System.html" title="Toybox::System (module)">System</a></span></span>
+     &raquo; 
+    <span class="title">DeviceSettings</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Toybox::System::DeviceSettings
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Toybox::System::DeviceSettings</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>DeviceSettings is a class used to represent various settings on the device.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#distanceUnits-instance_method" title="#distanceUnits (instance method)">- (Object) <strong>distanceUnits</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UNIT_METRIC if distance is shown in kilometers, UNIT_STATUTE if it is shown
+in miles.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#elevationUnits-instance_method" title="#elevationUnits (instance method)">- (Object) <strong>elevationUnits</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UNIT_METRIC if elevation is shown in meters, UNIT_STATUTE if it is shown in
+feet.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#heightUnits-instance_method" title="#heightUnits (instance method)">- (Object) <strong>heightUnits</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UNIT_METRIC if height is shown in meters, UNIT_STATUTE if it is shown in
+feet.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#is24Hour-instance_method" title="#is24Hour (instance method)">- (Object) <strong>is24Hour</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><dl class="rdoc-list label-list"><dt>Boolean
+<dd>
+<p>true if unit shows 24 hour units, false if it displays 12 hour.</p>
+</dd></dl>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#paceUnits-instance_method" title="#paceUnits (instance method)">- (Object) <strong>paceUnits</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UNIT_METRIC if pace is shown in kilometers/hour, UNIT_STATUTE if it is
+shown in miles/hour.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#phoneConnected-instance_method" title="#phoneConnected (instance method)">- (Object) <strong>phoneConnected</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><dl class="rdoc-list label-list"><dt>Booelan
+<dd>
+<p>true if a mobile phone is connected to the device, false otherwise.</p>
+</dd></dl>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#temperatureUnits-instance_method" title="#temperatureUnits (instance method)">- (Object) <strong>temperatureUnits</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UNIT_METRIC if temperature is shown in Celsius, UNIT_STATUTE if it is shown
+in Fahrenheit.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tonesOn-instance_method" title="#tonesOn (instance method)">- (Object) <strong>tonesOn</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><dl class="rdoc-list label-list"><dt>Boolean
+<dd>
+<p>true if tones are enabled on the unit, false if they are disabled.</p>
+</dd></dl>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#vibrateOn-instance_method" title="#vibrateOn (instance method)">- (Object) <strong>vibrateOn</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><dl class="rdoc-list label-list"><dt>Boolean
+<dd>
+<p>true if vibration is enabled on the unit, false if it is disabled.</p>
+</dd></dl>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#weightUnits-instance_method" title="#weightUnits (instance method)">- (Object) <strong>weightUnits</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>UNIT_METRIC if weight is shown in kilograms, UNIT_STATUTE if it is shown in
+pounds.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="distanceUnits=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="distanceUnits-instance_method">
+  
+    - (<tt>Object</tt>) <strong>distanceUnits</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UNIT_METRIC if distance is shown in kilometers, UNIT_STATUTE if it is shown
+in miles</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="elevationUnits=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="elevationUnits-instance_method">
+  
+    - (<tt>Object</tt>) <strong>elevationUnits</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UNIT_METRIC if elevation is shown in meters, UNIT_STATUTE if it is shown in
+feet</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="heightUnits=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="heightUnits-instance_method">
+  
+    - (<tt>Object</tt>) <strong>heightUnits</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UNIT_METRIC if height is shown in meters, UNIT_STATUTE if it is shown in
+feet</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="is24Hour=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="is24Hour-instance_method">
+  
+    - (<tt>Object</tt>) <strong>is24Hour</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <dl class="rdoc-list label-list"><dt>Boolean
+<dd>
+<p>true if unit shows 24 hour units, false if it displays 12 hour</p>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="paceUnits=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="paceUnits-instance_method">
+  
+    - (<tt>Object</tt>) <strong>paceUnits</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UNIT_METRIC if pace is shown in kilometers/hour, UNIT_STATUTE if it is
+shown in miles/hour</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="phoneConnected=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="phoneConnected-instance_method">
+  
+    - (<tt>Object</tt>) <strong>phoneConnected</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <dl class="rdoc-list label-list"><dt>Booelan
+<dd>
+<p>true if a mobile phone is connected to the device, false otherwise</p>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="temperatureUnits=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="temperatureUnits-instance_method">
+  
+    - (<tt>Object</tt>) <strong>temperatureUnits</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UNIT_METRIC if temperature is shown in Celsius, UNIT_STATUTE if it is shown
+in Fahrenheit</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="tonesOn=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="tonesOn-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tonesOn</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <dl class="rdoc-list label-list"><dt>Boolean
+<dd>
+<p>true if tones are enabled on the unit, false if they are disabled</p>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="vibrateOn=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="vibrateOn-instance_method">
+  
+    - (<tt>Object</tt>) <strong>vibrateOn</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <dl class="rdoc-list label-list"><dt>Boolean
+<dd>
+<p>true if vibration is enabled on the unit, false if it is disabled</p>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="weightUnits=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="weightUnits-instance_method">
+  
+    - (<tt>Object</tt>) <strong>weightUnits</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>UNIT_METRIC if weight is shown in kilograms, UNIT_STATUTE if it is shown in
+pounds</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+  </div>
+
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Feb 26 13:03:09 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.4 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
